@@ -128,86 +128,9 @@ section {
     margin: 1rem 0;
 }
 
-.text-animation span{
+.profession span{
     position: relative;
 }
-
-.text-animation span::before{
-    content: 'AEC Software Developer';
-    animation: words 20s infinite;
-}
-
-.text-animation span::after{
-    content: '';
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 2px solid var(--main-color);
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
-
-@keyframes cursor{
-    to{
-        border-left: 2px solid var(--main-color);
-    }
-}
-
-@keyframes words{
-    0%,
-    20%{
-        content: 'AEC Developer';
-    }
-    21%,
-    40%{
-        content: 'BIM Developer';
-    }
-    41%,
-    60%{
-        content: 'Web Developer';
-    }
-    61%,
-    80%{
-        content: 'Traffic Engineer';
-    }
-    81%,
-    100%{
-        content: 'Civil Engineer';  
-    }
-}
-
-@keyframes typing{
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95%{
-        width: 0;
-    }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85%{
-        width: calc(100% + 8px);
-    }
-}
-
-/* .home-content p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.8;
-} */
 
 .home-img img {
     width: 32vw;
@@ -444,14 +367,26 @@ section {
                 0 0 50px hotpink;
 }
 
-.bar .progress-line.highway span{
+.bar .progress-line.desktop span{
+    width: 80%;
+    background-color: skyblue;
+    box-shadow: 0 0 25px skyblue;
+    transition: 0.3s ease;
+}
+
+.bar .progress-line.desktop span:hover{
+    box-shadow: 0 0 25px skyblue,
+                0 0 50px skyblue;
+}
+
+.bar .progress-line.database span{
     width: 80%;
     background-color: greenyellow;
     box-shadow: 0 0 25px greenyellow;
     transition: 0.3s ease;
 }
 
-.bar .progress-line.highway span:hover{
+.bar .progress-line.database span:hover{
     box-shadow: 0 0 25px greenyellow,
                 0 0 50px greenyellow;
 }
@@ -543,6 +478,8 @@ section {
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
     transition: 0.3s ease;
+    height: 520px;
+    width: 370px;
 }
 
 .project-card:hover{
@@ -551,16 +488,43 @@ section {
     transform: scale(1.02);
 }
 
-.project-card img{
+.project-image {
+    width: 280px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-bg-color);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 1.5rem;
+}
+
+/* .project-card img{
+    max-height: 300px;
     max-width: 300px;
     border-radius: 2em;
     object-fit: cover;
-}
+} */
+
 .project-card h3{
     font-size: 3rem;
 }
 .project-card p{
     font-size: 1.6rem;
+}
+
+.tech-stack {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact{
