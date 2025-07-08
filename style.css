@@ -486,7 +486,8 @@ section {
     box-shadow: none;
     transition: 0.3s ease;
     height: 520px;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
 }
 
 .project-card:hover{
@@ -667,5 +668,41 @@ section {
     .contact form{
         flex-direction: column;
     }
+    .projects-box {
+        grid-template-columns: 1fr;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    .project-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 2rem 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    .social-download-row {
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5rem;
+        }
+    .btn {
+          box-sizing: border-box;
+          text-align: center;
+        }
 }
+
+/* @media (max-width: 600px) {
+    .projects-box {
+      grid-template-columns: 1fr;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .project-card {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 0 2rem 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  } */
 
