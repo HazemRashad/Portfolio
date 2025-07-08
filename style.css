@@ -601,6 +601,13 @@ section {
     font-size: 16px;
 }
 
+.social-download-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 @media(max-width: 1285px){
     #menu-icon{
         display: block;
