@@ -11,10 +11,6 @@ A clean, responsive personal website to showcase AEC software projects, skills, 
 ## Tech Stack
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
-- Netlify/GitHub Pages for deployment
+- JavaScript
+- GitHub Pages for deployment
 
-
-## Future Enhancements
-- Light Mode
-- Blog integration
